@@ -138,3 +138,4 @@ test-e2e-single-node: install-go-junit-report
 
 bootstrap-e2e: install-go-junit-report install-setup-envtest
 	set -o pipefail; CGO_ENABLED=0 go test -tags=$(GOTAGS) -v$${WHAT:+ -run="$$WHAT"} ./test/e2e-bootstrap/ | ./hack/test-with-junit.sh $(@)
+

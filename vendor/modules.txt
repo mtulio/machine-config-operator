@@ -423,8 +423,6 @@ github.com/gofrs/flock
 ## explicit; go 1.15
 github.com/gogo/protobuf/proto
 github.com/gogo/protobuf/sortkeys
-# github.com/golang/glog v1.0.0
-## explicit
 # github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da
 ## explicit
 github.com/golang/groupcache/lru
@@ -775,7 +773,7 @@ github.com/opencontainers/runc/libcontainer/user
 # github.com/opencontainers/runtime-spec v1.0.3-0.20210326190908-1c3f411f0417
 ## explicit
 github.com/opencontainers/runtime-spec/specs-go
-# github.com/openshift/api v0.0.0-20230613151523-ba04973d3ed1
+# github.com/openshift/api v0.0.0-20230613151523-ba04973d3ed1 => github.com/mtulio/api v0.0.0-20230630145723-18d636baa7c3
 ## explicit; go 1.20
 github.com/openshift/api
 github.com/openshift/api/apiserver
@@ -892,7 +890,7 @@ github.com/openshift/client-go/operator/listers/operator/v1alpha1
 # github.com/openshift/cluster-config-operator v0.0.0-alpha.0.0.20230516205036-088c6d48cc1a
 ## explicit; go 1.20
 github.com/openshift/cluster-config-operator/pkg/operator/featuregates
-# github.com/openshift/library-go v0.0.0-20230614142803-865e70cc6b32
+# github.com/openshift/library-go v0.0.0-20230614142803-865e70cc6b32 => github.com/mtulio/library-go v0.0.0-20230630150302-deb6056a3b22
 ## explicit; go 1.20
 github.com/openshift/library-go/pkg/cloudprovider
 github.com/openshift/library-go/pkg/config/clusteroperator/v1helpers
@@ -2216,3 +2214,5 @@ sigs.k8s.io/structured-merge-diff/v4/value
 # sigs.k8s.io/yaml v1.3.0
 ## explicit; go 1.12
 sigs.k8s.io/yaml
+# github.com/openshift/library-go => github.com/mtulio/library-go v0.0.0-20230630150302-deb6056a3b22
+# github.com/openshift/api => github.com/mtulio/api v0.0.0-20230630145723-18d636baa7c3
