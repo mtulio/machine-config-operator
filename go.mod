@@ -2,10 +2,6 @@ module github.com/openshift/machine-config-operator
 
 go 1.18
 
-replace github.com/openshift/library-go => github.com/mtulio/library-go v0.0.0-20230630150302-deb6056a3b22
-
-replace github.com/openshift/api => github.com/mtulio/api v0.0.0-20230630145723-18d636baa7c3
-
 require (
 	github.com/BurntSushi/toml v1.2.1
 	github.com/InVisionApp/go-health v2.1.0+incompatible

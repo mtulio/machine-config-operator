@@ -114,7 +114,7 @@ type InfrastructureStatus struct {
 	// +kubebuilder:default=None
 	// +default="None"
 	// +kubebuilder:validation:Enum=None;AllNodes
-	// +openshift:enable:FeatureSets=CustomNoUpgrade;TechPreviewNoUpgrade
+	// +openshift:enable:FeatureSets=TechPreviewNoUpgrade
 	// +optional
 	CPUPartitioning CPUPartitioningMode `json:"cpuPartitioning,omitempty"`
 }
@@ -353,6 +353,7 @@ type ExternalPlatformStatus struct {
 	// cloudControllerManager contains settings specific to the external Cloud Controller Manager (a.k.a. CCM or CPI).
 	// When omitted, new nodes will be not tainted
 	// and no extra initialization from the cloud controller manager is expected.
+	// +openshift:enable:FeatureSets=TechPreviewNoUpgrade
 	// +optional
 	CloudControllerManager CloudControllerManagerStatus `json:"cloudControllerManager"`
 }
@@ -660,7 +661,7 @@ type BareMetalPlatformStatus struct {
 	// loadBalancer defines how the load balancer used by the cluster is configured.
 	// +default={"type": "OpenShiftManagedDefault"}
 	// +kubebuilder:default={"type": "OpenShiftManagedDefault"}
-	// +openshift:enable:FeatureSets=CustomNoUpgrade;TechPreviewNoUpgrade
+	// +openshift:enable:FeatureSets=TechPreviewNoUpgrade
 	// +optional
 	LoadBalancer *BareMetalPlatformLoadBalancer `json:"loadBalancer,omitempty"`
 }
@@ -810,7 +811,7 @@ type OvirtPlatformStatus struct {
 	// loadBalancer defines how the load balancer used by the cluster is configured.
 	// +default={"type": "OpenShiftManagedDefault"}
 	// +kubebuilder:default={"type": "OpenShiftManagedDefault"}
-	// +openshift:enable:FeatureSets=CustomNoUpgrade;TechPreviewNoUpgrade
+	// +openshift:enable:FeatureSets=TechPreviewNoUpgrade
 	// +optional
 	LoadBalancer *OvirtPlatformLoadBalancer `json:"loadBalancer,omitempty"`
 }
@@ -1076,7 +1077,7 @@ type VSpherePlatformStatus struct {
 	// loadBalancer defines how the load balancer used by the cluster is configured.
 	// +default={"type": "OpenShiftManagedDefault"}
 	// +kubebuilder:default={"type": "OpenShiftManagedDefault"}
-	// +openshift:enable:FeatureSets=CustomNoUpgrade;TechPreviewNoUpgrade
+	// +openshift:enable:FeatureSets=TechPreviewNoUpgrade
 	// +optional
 	LoadBalancer *VSpherePlatformLoadBalancer `json:"loadBalancer,omitempty"`
 }
@@ -1359,7 +1360,7 @@ type NutanixPlatformStatus struct {
 	// loadBalancer defines how the load balancer used by the cluster is configured.
 	// +default={"type": "OpenShiftManagedDefault"}
 	// +kubebuilder:default={"type": "OpenShiftManagedDefault"}
-	// +openshift:enable:FeatureSets=CustomNoUpgrade;TechPreviewNoUpgrade
+	// +openshift:enable:FeatureSets=TechPreviewNoUpgrade
 	// +optional
 	LoadBalancer *NutanixPlatformLoadBalancer `json:"loadBalancer,omitempty"`
 }
